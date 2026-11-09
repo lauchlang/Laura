@@ -3,35 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la Página: Prueba de proyecto</title>
+    <title>Laura María Guerrero Fernández | Portfolio</title>
+    <!-- Tipografía moderna estilo editorial -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            background-color: pink;
-            color: white;
-            font-family: sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .video-container {
-            margin-top: 20px;
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #faf7f8; /* Tono blanco roto con un matiz rosa suave */
+            color: #1a1a1a;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+
+        /* Barra de navegación minimalista */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(250, 247, 248, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #f0e6ea;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-left: 25px;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #e08ba5;
+        }
+
+        /* Sección principal / Hero */
+        .hero {
+            max-width: 1000px;
+            margin: 80px auto 40px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero span {
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #a87f8f;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 500px;
+            margin: 0 auto;
+            color: #666;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        /* Sección de Video incrustado */
+        .video-section {
+            max-width: 850px;
+            margin: 60px auto 100px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .video-title {
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            background-color: #000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.7rem;
+            letter-spacing: 1.5px;
+            color: #999;
+            text-transform: uppercase;
+            border-top: 1px solid #f0e6ea;
         }
     </style>
 </head>
 <body>
 
-    <h1>Encabezado principal</h1>
-    <p>Bienvenido a mi página web personal.</p>
-    <h2>Laura María Guerrero Fernández</h2>
+    <header>
+        <div class="logo">Laura María Guerrero Fernández</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#multimedia">Multimedia</a>
+        </nav>
+    </header>
 
-    <div class="video-container">
-        <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/wAMZ6KpMGQI" 
-            title="Reproductor de video de YouTube" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
-    </div>
+    <main>
+        <section class="hero" id="inicio">
+            <span>Proyecto Personal</span>
+            <h1>Laura María Guerrero Fernández</h1>
+            <p>Espacio digital personal y portfolio de proyectos.</p>
+        </section>
+
+        <section class="video-section" id="multimedia">
+            <h3 class="video-title">Contenido Destacado</h3>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/wAMZ6KpMGQI" 
+                    title="Video reproductor" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Laura María Guerrero Fernández. Todos los derechos reservados.
+    </footer>
 
 </body>
 </html>
