@@ -1,6 +1,6 @@
 # Laura-
-Proyecto de demostración para la página web de mi proyecto.
+## Proyecto de demostración para la página web de mi proyecto.
 
-Espero que esta prueba salga bien :) 
+Espero que esta prueba salga bien :)
 
-Esta página web es sobre mi TFG: Políticas activas de empleo para víctimas de trata de seres humanos con fines de explotación sexual 
+> Esta página web es sobre mi TFG: Políticas activas de empleo para víctimas de trata de seres humanos con fines de explotación sexual.
